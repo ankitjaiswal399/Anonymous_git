@@ -8,38 +8,23 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <!-- bootstrap file -->
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
    <style>
-    #banner_image{
-        padding-top: 75px;
-        padding-bottom: 50px;
-        text-align: center;
-        color: #f8f8f8;
-        background: url("http://cdn1.bostonmagazine.com/wp-content/uploads/sites/2/2015/10/BOB_102615_BobbyBoston_main.jpg") no-repeat center center;
-        background-size: cover;
-    }
+   #footer{
+     position: absolute;
+      padding: 10px 0;
+      background-color: #101010;
+      color:#9d9d9d;
+      bottom: 0;
+      width: 100%;
+   }
 
-    #banner_content{
-       position: relative;
-       padding-top: 6%;
-       padding-bottom: 6%;
-       margin-top: 12%;
-       margin-bottom: 12%;
-       background-color: rgba(0, 0, 0, 0.7);
-       max-width: 660px;
-    }
-
-    #footer{
-      
-       padding: 10px 0;
-       background-color: #101010;
-       color:#9d9d9d;
-       bottom: 0;
-       width: 100%;
-
-    }
+   .row_style{
+     margin: 100px 0px 100px 0px;
+   }
    </style>
+   <title>login</title>
 
-   <title>Index</title>
 </head>
 
 <body>
@@ -65,13 +50,33 @@
     </div>
   </nav>
 
-  <div id="banner_image">
-    <div class="container">
-      <center>
-      <div id="banner_content">
-        <button type="button" class="btn btn-danger btn-lg active"><a href="products.php">Shop Now</a></button>
+
+  <div class="coantainer ">
+    <div class="row row_style">
+      <div class="col-xs-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3>LOGIN</h3>
+        </div>
+        <div class="panel-body">
+          <p class="text-warning">Login to make a purchase</p>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" name="E-mail" placeholder="Email"></input>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" placeholder="password"></input>
+            </div>
+            <div class="form-group">
+              <button type="button" class="btn btn-primary">LOGIN</button>
+            </div>
+          </form>
+        </div>
+        <div class="panel-footer">
+           <p>Don't have an account? Register
+        </div>
       </div>
-      </center>
+      </div>
     </div>
   </div>
 

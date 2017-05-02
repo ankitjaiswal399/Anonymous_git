@@ -8,38 +8,23 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <!-- bootstrap file -->
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
    <style>
-    #banner_image{
-        padding-top: 75px;
-        padding-bottom: 50px;
-        text-align: center;
-        color: #f8f8f8;
-        background: url("http://cdn1.bostonmagazine.com/wp-content/uploads/sites/2/2015/10/BOB_102615_BobbyBoston_main.jpg") no-repeat center center;
-        background-size: cover;
-    }
+   #footer{
+     position: absolute;
+      padding: 10px 0;
+      background-color: #101010;
+      color:#9d9d9d;
+      bottom: 0;
+      width: 100%;
+   }
 
-    #banner_content{
-       position: relative;
-       padding-top: 6%;
-       padding-bottom: 6%;
-       margin-top: 12%;
-       margin-bottom: 12%;
-       background-color: rgba(0, 0, 0, 0.7);
-       max-width: 660px;
-    }
-
-    #footer{
-      
-       padding: 10px 0;
-       background-color: #101010;
-       color:#9d9d9d;
-       bottom: 0;
-       width: 100%;
-
-    }
+   .row_style{
+     margin: 100px 0px 100px 0px;
+   }
    </style>
+   <title>Success</title>
 
-   <title>Index</title>
 </head>
 
 <body>
@@ -51,27 +36,30 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
       </div>
 
       <div class="collapse collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav navbar-right" >
 
-          <li><a href="signup.php"><span class="glyphicon glyphicon-user">Signup</span></a></li>
-          <li><a href="login.php"><span class="glyphicon glyphicon-log-in">LogIn</span></a></li>
+          <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart">Cart</span></a></li>
+          <li><a href="setting.php"><span class="glyphicon glyphicon-cog">Settings</span></a></li>
+          <li><a href="logOut.php"><span class="glyphicon glyphicon-log-out">LogOut</span></a></li>
 
         </ul>
       </div>
     </div>
   </nav>
 
-  <div id="banner_image">
-    <div class="container">
-      <center>
-      <div id="banner_content">
-        <button type="button" class="btn btn-danger btn-lg active"><a href="products.php">Shop Now</a></button>
+
+  <div class="coantainer ">
+    <div class="row row_style">
+      <div class="col-xs-8 col-xs-offset-2">
+        <div class="Jumbotron">
+            <center><h2>Password Is Changed Successfully!!</h2></center>
+        </div>
       </div>
-      </center>
     </div>
   </div>
 
